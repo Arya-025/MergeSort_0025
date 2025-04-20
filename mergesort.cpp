@@ -53,11 +53,11 @@ void mergesort(int low, int high)
         if (arr[i] <= arr[j])
         {
             B[k] = arr[i];
-            i++
+            i++;
         }
         else
         {
-            B{k} = arr[j];
+            B[k] = arr[j];
             j++;
         }
         k++;
@@ -80,4 +80,21 @@ void mergesort(int low, int high)
     {
         arr[x] = B[x];
     }
+}
+
+void output()
+{
+    cout << "\ndata setelah diurutkan (merge sort): ";
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
+
+int main()
+{
+    input();
+    mergesort(0, n - 1);
+    output();
 }
