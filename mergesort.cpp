@@ -30,3 +30,12 @@ void input()
         cin >> arr[i];
     }
 }
+
+
+void mergesort(int low, int high)
+{
+    if (low >= high)
+    {
+        return;
+    }
+}
